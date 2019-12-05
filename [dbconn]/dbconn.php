@@ -1,9 +1,9 @@
 <?
 error_reporting(0);
-//@$db=mysql_pconnect("127.0.0.6","tzpolice","dKs8hfd123bn");
-//@$db=mysql_connect('192.168.253.6', 'tzpolice', 'dKs8hfd123bn');
+//@$db=mysql_pconnect("127.0.0.6","","");
+//@$db=mysql_connect('192.168.253.6', '', '');
 
-@$db=mysql_connect('192.168.253.6', 'tzpolice', 'uDKs8NthHdsMtBUW');
+@$db=mysql_connect('192.168.253.6', '', '');
 
 if (!$db) {
 	foreach($_REQUEST as $k=>$v) {
@@ -25,9 +25,9 @@ Server responce: <?=mysql_error()?>
 
 -->
 <br><br><blockquote style="font-family:verdana;font-size:11px">
-<b>Простите, сайт временно недоступен</b><br>
-Надеемся увидеть вас чуть позже.<br>
-Информация для каторжан: все ресурсы обязательно будут учтены позже.<br><br>
+<b>ГЏГ°Г®Г±ГІГЁГІГҐ, Г±Г Г©ГІ ГўГ°ГҐГ¬ГҐГ­Г­Г® Г­ГҐГ¤Г®Г±ГІГіГЇГҐГ­</b><br>
+ГЌГ Г¤ГҐГҐГ¬Г±Гї ГіГўГЁГ¤ГҐГІГј ГўГ Г± Г·ГіГІГј ГЇГ®Г§Г¦ГҐ.<br>
+Г€Г­ГґГ®Г°Г¬Г Г¶ГЁГї Г¤Г«Гї ГЄГ ГІГ®Г°Г¦Г Г­: ГўГ±ГҐ Г°ГҐГ±ГіГ°Г±Г» Г®ГЎГїГ§Г ГІГҐГ«ГјГ­Г® ГЎГіГ¤ГіГІ ГіГ·ГІГҐГ­Г» ГЇГ®Г§Г¦ГҐ.<br><br>
 <b>We are sorry, but our site is unavailable right now</b><br>
 Please come back soon.<br>
 For prisoners: all resourses will be counted as soon as possible.
