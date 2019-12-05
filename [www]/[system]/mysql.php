@@ -3,14 +3,14 @@
 if(!defined('DB')) die('Wood ;)');
 
 $dbhost = "192.168.253.6";
-$dbuname = "tzpolice";
-$dbpass = "Vt5mwJso";
-$dbname = "tzpolice";
+$dbuname = "";
+$dbpass = "";
+$dbname = "";
 
 $dbhost2 = "192.168.253.6";
-$dbuname2 = "tzpolice_test";
-$dbpass2 = "StxoE1Yv";
-$dbname2 = "tzpolice_test";
+$dbuname2 = "";
+$dbpass2 = "";
+$dbname2 = "";
 
 
 class sql_db {
@@ -203,11 +203,11 @@ class sql_db {
 }
 
 $db = new sql_db($dbhost, $dbuname, $dbpass, $dbname, false);
-if (!$db->db_connect_id) die("<br /><br /><center>Проблемы с базой данных.</center>");
+if (!$db->db_connect_id) die("<br /><br /><center>ГЏГ°Г®ГЎГ«ГҐГ¬Г» Г± ГЎГ Г§Г®Г© Г¤Г Г­Г­Г»Гµ.</center>");
 
 
 $db2 = new sql_db($dbhost2, $dbuname2, $dbpass2, $dbname2, false);
-if (!$db2->db_connect_id) die("<br /><br /><center>Проблемы с базой данных 2.</center>");
+if (!$db2->db_connect_id) die("<br /><br /><center>ГЏГ°Г®ГЎГ«ГҐГ¬Г» Г± ГЎГ Г§Г®Г© Г¤Г Г­Г­Г»Гµ 2.</center>");
 
 $db->sql_query('SET NAMES CP1251');
 $db2->sql_query('SET NAMES CP1251');
