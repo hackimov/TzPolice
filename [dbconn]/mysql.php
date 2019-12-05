@@ -192,10 +192,10 @@ class sql_db {
 	}
 }
 
-$conf = Array("dbhost"=>"192.168.253.6","dbname"=>"tzpolice","dbuname"=>"tzpolice","dbpass"=>"Vt5mwJso");
+$conf = Array("dbhost"=>"192.168.253.6","dbname"=>"","dbuname"=>"","dbpass"=>"");
 
 $db = new sql_db($conf['dbhost'], $conf['dbuname'], $conf['dbpass'], $conf['dbname'], false);
-if (!$db->db_connect_id) die("<br /><br /><center>ПРоблемы с базой данных.</center>");
+if (!$db->db_connect_id) die("<br /><br /><center>ГЏГђГ®ГЎГ«ГҐГ¬Г» Г± ГЎГ Г§Г®Г© Г¤Г Г­Г­Г»Гµ.</center>");
 unset($conf);
 mysql_query ("set character_set_client='cp1251'");
 mysql_query ("set character_set_results='cp1251'");
