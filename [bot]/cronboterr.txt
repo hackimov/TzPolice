@@ -1,0 +1,14 @@
+Status: 500
+Content-type: text/html
+
+<h1>Software error:</h1>
+<pre>syntax error at /home/sites/police/bot/tzbot.pl line 560, near &quot;)
+
+								chat_msg&quot;
+Execution of /home/sites/police/bot/tzbot.pl aborted due to compilation errors.
+</pre>
+<p>
+For help, please send mail to this site's webmaster, giving this error message 
+and the time and date of the error.
+
+</p>

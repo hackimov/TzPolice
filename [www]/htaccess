@@ -1,0 +1,44 @@
+AddDefaultCharset windows-1251
+php_value default_charset windows-1251
+php_flag allow_url_fopen on
+php_value upload_tmp_dir ../tmp
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+
+DirectoryIndex index.php index.html
+
+#Option +FollowSymlinks
+
+Deny from 148.244.150.58 195.190.97.220
+
+<Files 403.html>
+allow from all
+</files>
+RewriteEngine on
+RewriteBase /
+RewriteRule ^userbar/([0-9]*)/([0-9]*)\.jpg$ /ubar/ub.php?user=$1&kind=$2 [L]
+RewriteRule ^sbtl.ru.html /battle.php
+#RewriteRule ^blacklist.txt /bl_txt.php
+Redirect 301 /userbars http://www.tzpolice.ru/?act=userbars
+RewriteRule ^foto-(.*)$ /fotos_redirect.php?nick=$1
+RewriteRule ^special/article/([0-9]*)\.html$ /_modules/maxwell/weekly/article.php?articleId=$1 [L]
+RewriteRule ^special/issue/([0-9]*)\.html$ /_modules/maxwell/weekly/index.php?issueId=$1 [L]
+RewriteRule ^special/archive.html$ /_modules/maxwell/weekly/archive.php [L]
+RewriteRule ^special.html$ /_modules/maxwell/weekly/index.php [L]
+RewriteRule ^special/$ /_modules/maxwell/weekly/index.php [L]
+RewriteRule ^special$ /_modules/maxwell/weekly/index.php [L]
+#RewriteRule ^(.*)jbl.js(.*)$ $1jbl_new.php$2
+#RewriteRule ^(.*)jbl_new.js(.*)$ $1jbl_new.php$2
+#RewriteRule ^(.*)jbl_mp.js(.*)$ $1jbl_mp.php$2
+#RewriteRule ^(.*)comm.xml(.*)$ $1comm.php$2
+#RewriteRule /logstorage/(.*).tzb$ /adamastis/$1.tzb
+RewriteRule ^logstorage/([0-9]+)\.tzb$ /adamastis/logs/$1.tzb
+RewriteRule ^remind-([0-9]+)-(.*) /index.php?act=user_remind&uid=$1&code=$2 
+RewriteCond %{HTTP_REFERER} !^http://www.tzpolice.ru.*$ [NC] 
+RewriteRule ^i/fotos/(.*) /view_foto.php?file=$1 [L]
+#RewriteCond %{REQUEST_FILENAME} !-f
+#RewriteCond %{REQUEST_FILENAME} !-d
+#RewriteRule ^(.*)$ indexo.php?q=$1 [L,QSA]
+RewriteRule ^20000PVE|20000pve$ /index.php?act=data2&type=manuals&Id=969
+RewriteRule ^kurs$ /index.php?act=data2&type=manuals&Id=971
+AddType application/x-unknown .tzb

@@ -1,0 +1,33 @@
+Argument "Deorg" isn't numeric in numeric ne (!=) at /home/sites/police/bot_pa/mod.pa.pl line 79.
+Caught a SIGTERM at /usr/lib64/perl5/5.12.3/x86_64-linux/IO/Select.pm line 105
+$ = eval {...} called from file `/usr/lib64/perl5/5.12.3/x86_64-linux/IO/Select.pm' line 105
+Modification of a read-only value attempted at /usr/lib64/perl5/5.12.3/sigtrap.pm line 99.
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Use of uninitialized value $msg in concatenation (.) or string at /home/sites/police/bot_pa/mod.pa.pl line 27.
+Argument "Bart_08rus" isn't numeric in numeric ne (!=) at /home/sites/police/bot_pa/mod.pa.pl line 79.
+Argument "\n" isn't numeric in numeric ne (!=) at /home/sites/police/bot_pa/mod.pa.pl line 79.
+Use of uninitialized value $alerts{"\n"} in concatenation (.) or string at /home/sites/police/bot_pa/mod.pa.pl line 79.
+Use of uninitialized value $alerts{"\n"} in concatenation (.) or string at /home/sites/police/bot_pa/mod.pa.pl line 80.
+Caught a SIGALRM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGALRM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113
+Caught a SIGTERM at /home/sites/police/bot_pa/pabot.pl line 1113
+$ = eval {...} called from file `/home/sites/police/bot_pa/pabot.pl' line 1113

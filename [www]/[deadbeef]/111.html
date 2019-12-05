@@ -1,0 +1,28 @@
+<html>
+
+<head>
+  <title>test</title>
+</head>
+
+<body onLoad="load();">
+<div id='tmp'></div>
+<script>
+var img = new Image();
+function load()
+	{
+		img.src = 'http://www.timezero.ru/i/avatar/full_man1.jpg';
+//		img.onLoad = loaded();
+		waiting = setInterval(loaded, 100);
+	}
+function loaded()
+	{
+		if (img.complete)
+			{
+				alert('loaded!');
+				document.getElementById('tmp').innerHTML='<img src="http://www.timezero.ru/i/avatar/full_man1.jpg">';
+				clearInterval(waiting);
+			}	}
+</script>
+</body>
+
+</html>

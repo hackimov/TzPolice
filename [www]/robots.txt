@@ -1,0 +1,9 @@
+User-agent: *
+Disallow: /_cron
+Disallow: /_modules
+Disallow: /6labs
+Disallow: /backup
+Disallow: /deadbeef
+Disallow: /direct_call
+Disallow: /excel
+Disallow: /interface

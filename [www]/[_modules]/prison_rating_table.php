@@ -1,0 +1,4 @@
+Показаны данные на <b>25.12.2018 03:00</b><br><br><center><table width="400" border="0" cellspacing="3" cellpadding="3"><tr><td width="1" bgcolor="#FAC987" align="center"><b>&nbsp;&nbsp;№&nbsp;&nbsp;</b></td><td bgcolor="#FAC987"><b>Персонаж</b></td><td bgcolor="#FAC987" align="center" width="1"><b>Собрано</b></td></tr>
+		            <tr><td bgcolor="#FEF5E9" align="center">1</td><td bgcolor="#FEF5E9">*__DOBERMANN__*</td><td bgcolor="#FEF5E9" align="center">2700</td></tr>
+		            <tr><td bgcolor="#FCE6C7" align="center">2</td><td bgcolor="#FCE6C7">Sergeevi4</td><td bgcolor="#FCE6C7" align="center">2436</td></tr>
+		            <tr><td bgcolor="#FEF5E9" align="center">3</td><td bgcolor="#FEF5E9">*AkA*</td><td bgcolor="#FEF5E9" align="center">300</td></tr></table>

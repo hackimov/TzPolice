@@ -1,0 +1,23 @@
+^1$
+	–есурсы следует сдавать на склад каторжного завода. »нформаци€ по сданным ресурсам обновл€етс€ в модуле каторжника не реже одного раза в час. ћодуль можно найти в арсенале.
+
+^2$	
+	≈сли в модуле каторжанина вы видите сообщение, что дл€ вас не определен срок заключени€ - обратитесь к одному из сотрудников полиции, занимающихс€ каторгой. ≈сли вы видите сообщение о том, что не найдены в списке каторжан - сдайте на склад завода хот€ бы один ресурс и подождите следующего обновлени€ статистики (дата последнего обновлени€ указана в модуле, обновлени€ не реже одного раза в час).
+
+^3$
+	¬ы можете обратитьс€ к следующим сотрудникам полиции: [RAWarrior], [BIGZLO] , [Shot] , [кусаюсь], [-*-Shadow-*-] 
+
+^33$
+	ј, это вы, Ўтирлиц?! ќтойдите, и не мешайте работать.
+
+\b4\s*8\s*15\s*16\s*23\s*42\b
+	:rupor: SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED
+
+^\d+$
+	я же по-русски сказал: 1, 2, или 3. ƒругих команд € не понимаю.
+
+.*
+	«дравствуйте, вас приветствует автоответчик. Ќапишите мне в приват: 1 - чтобы узнать куда сдавать ресурсы, 2 - дл€ информации по модулю каторжанина, 3 - дл€ получени€ списка сотрудников полиции, занимающихс€ каторгой.
+
+#pl_fab_no_key
+	“оварищ главнокомандующий, выполнить сканирование логов завода не представл€етс€ возможным ввиду отсутстви€ ключа. :cry2:

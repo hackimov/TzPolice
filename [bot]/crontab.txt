@@ -1,0 +1,2 @@
+* * * * * ps -ef|grep tzbot.pl|grep -v grep||nice -n 5 /home/sites/police/bot/tzbot.pl
+*/5 * * * * ps -ef|grep tzmaint.pl|grep -v grep||nice -n 10 /home/sites/police/bot/tzmaint.pl

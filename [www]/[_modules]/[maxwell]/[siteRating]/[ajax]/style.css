@@ -1,0 +1,40 @@
+.tblSites {
+        background: #c6c3c6;
+        border: 0px;
+        text-align: center;
+        font-family: monospace;
+    }
+    .tblSites tr {
+        background: #ffffff;
+        cursor: pointer;
+    }
+    #tblSitesHeader {
+        background: #eeeeee;
+    }
+    .searchInput {
+        background: #ffffff;
+        border: 1px #999999 solid;
+        font-family: monospace
+    }
+    .searchBtn {
+        font-family: monospace;
+        background:#E0E0E0 none repeat scroll 0% 0%;
+        border: 1px #BFBFBF solid;
+        color:#999999;
+        cursor: pointer;
+    }
+    .editTable {
+        background: #fad163;
+        border: 0px;
+        text-align: center;
+        font-family: monospace;
+    }
+    .editTable tr {
+        background: #fff7d7;
+    }
+    .editBtn {
+        font-family: monospace;
+        background:#fae5b0 none repeat scroll 0% 0%;
+        border: 1px #fad163 solid;
+        color:#000000;
+    }

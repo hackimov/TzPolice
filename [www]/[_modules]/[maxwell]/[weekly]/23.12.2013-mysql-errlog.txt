@@ -1,0 +1,6 @@
+23.12.2013 00:32:10 Error: Could not connect to database. [requests: articleId => 29|] 208.115.113.87
+23.12.2013 02:39:52 Error: Could not connect to database. [requests: articleId => 53|] 157.55.34.93
+23.12.2013 03:46:49 Error: Could not connect to database. [requests: articleId => 53|] 5.10.83.90
+23.12.2013 06:33:14 Error: Could not connect to database. [requests: articleId => 38|] 208.115.111.71
+23.12.2013 08:42:55 Error: Could not connect to database. [requests: articleId => 28|] 199.48.81.4
+23.12.2013 21:42:47 Error: Could not connect to database. [requests: articleId => 29|] 199.48.81.4

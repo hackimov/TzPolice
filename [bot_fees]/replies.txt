@@ -1,0 +1,29 @@
+^1$
+        
+        :sad:
+^2$     
+        :sad:
+
+^3$
+        :sad:
+
+^4$
+        :sad:
+
+^33$
+        А, это вы, Штирлиц?! Отойдите, и не мешайте работать.
+
+\b4\s*8\s*15\s*16\s*23\s*42\b
+        :rupor: SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED
+
+^\d+$
+        :sad:
+
+^356266$
+        Проверки проводятся для персонажей с 4 уровня и выше! Для подачи заявки на проверку переведите мне 10, 100 или 300 монет за обычную (5 суток), ускоренную (12 часов) или срочную (1 час) проверку. При заказе срочной проверки в поле "Причина:" укажите ник сотрудника лицензионного отдела, с которым достигнута договоренность о проверке. Чтобы узнать состояние своей заявки напишите мне в приват 'статус' (без кавычек).
+
+.*
+        Ищу работу :protest: Результаты старых заявок говорю только тем, кто знает пароль :bulldog: PS Пароль - 'статус' (без кавычек).
+
+#pl_fab_no_key
+        Товарищ главнокомандующий, выполнить сканирование логов завод не представляется возможным, в виду отсутствия ключа.

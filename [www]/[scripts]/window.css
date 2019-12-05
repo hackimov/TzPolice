@@ -1,0 +1,84 @@
+
+.inlineimg {
+	vertical-align: text-bottom;
+	line-height: normal;
+	display: inline;
+}
+select.s {
+	border-bottom: 1pt solid #9CA2AD;
+	border-left: 1pt solid #9CA2AD;
+	border-right: 1pt solid #9CA2AD;
+	border-top: 1pt solid #9CA2AD;
+	color: #576682;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+input.s {
+	border-bottom: 1pt solid #9CA2AD;
+	border-left: 1pt solid #9CA2AD;
+	border-right: 1pt solid #9CA2AD;
+	border-top: 1pt solid #9CA2AD;
+	color: #576682;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	margin-bottom: 3px;
+	margin-top: 3px;
+}
+#dialogWindowBut {
+	padding-left: 3px;
+	padding-right: 0px;
+	height: 23px;
+	border-bottom: 1px solid green;
+}
+#dialogWindow {
+	position:absolute;
+	right:3000%;
+	top:45%;
+	border: 1px solid #808080;
+	z-index:10000;
+	background: #000000;
+}
+#dialogWindowHint {
+	padding-bottom: 2px;
+	vertical-align: bottom;
+	font-size: 12px;
+	color: red;
+
+}
+#dialogWindowText {
+	padding: 3px;
+	font-size: 12px;
+	vertical-align: top;
+	text-align: left;
+    background: #333333;
+    border: 1px solid #808080;
+    color: #A4B2B4;
+}
+.dialogWindowLeftTop {
+	width: 21px;
+	height: 23px;
+	padding: 0px;
+}
+.dialogWindowRightTop {
+	width: 21px;
+	height: 23px;
+	padding: 0px;
+}
+.dialogWindowLeftMiddle {
+	width: 21px;
+}
+.dialogWindowRightMiddle {
+	width: 21px;
+}
+.dialogWindowLeftBottom {
+	width: 21px;
+	height: 27px;
+	padding: 0px;
+}
+.dialogWindowRightBottom {
+	width: 21px;
+	height: 27px;
+	padding: 0px;
+}

@@ -1,0 +1,53 @@
+html, body {
+    margin:0;
+    padding-left: 10;
+}
+
+a:link, a:visited               {color: #0055CC;}
+a:hover                                   {color: #CC0000;}
+a:active                                 {color: #CC0000;}
+
+.text {
+    border: 1px #000000 solid;
+    width: 256px;
+}
+
+.current { background: #c3d9ff; font-weight: bold;}
+
+.articlePos {
+    background: #e1ecfe;
+    border: 1px #000000 solid;
+}
+
+.articlePos_over {
+    background: #b7c4df;
+    border: 1px #000000 solid;
+}
+
+.articleSelected {
+    background: #fff3a3;
+    border: 1px #000000 solid;
+}
+.articleSelected_over {
+    background: #b7c4df;
+    border: 1px #000000 solid;
+}
+
+.articlePosTable {
+    border-collapse: collapse;
+    cursor: pointer;
+}
+
+.articlePosTable td {
+    width: 10px;
+    height: 10px;
+    font-size: 10px;
+    text-align: center;
+    vertical-align: center;
+}
+
+.date {
+    font-size: 80%;
+    color: #999999;
+    font-family: Georgia;
+}

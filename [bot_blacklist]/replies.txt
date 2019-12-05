@@ -1,0 +1,28 @@
+^33$
+	А, это вы, Штирлиц?! Отойдите, и не мешайте работать.
+
+\b4\s*8\s*15\s*16\s*23\s*42\b
+	:rupor: SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED SYSTEM FAILED
+
+.*
+	Монеты в оплату выхода из ЧС Полиции переводить мне. Сообщать о переводе копам нет необходимости. Подтверждение перевода придет вам телеграммой в течение часа. Если деньги перевели, а подтверждения через час нет - стучитесь копам и рассказывайте о беде. Вопросы можно не задавать - я бот и все равно не отвечу :bulldog:
+
+#pl_fab_no_key
+	Товарищ главнокомандующий, выполнить сканирование логов завод не представляется возможным, в виду отсутствия ключа.
+
+
+^1$
+	
+	:sad:
+^2$	
+	:sad:
+
+^3$
+	:sad:
+
+^4$
+	:sad:
+
+^\d+$
+	:sad:
+

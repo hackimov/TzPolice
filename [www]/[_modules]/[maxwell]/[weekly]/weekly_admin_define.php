@@ -1,0 +1,3 @@
+<?
+    $adminAccess = (AuthUserGroup == 100);
+?>

@@ -1,0 +1,1 @@
+05.09.2012 03:13:44 Error: Could not connect to database. [requests: articleId => 23|] 66.249.66.184

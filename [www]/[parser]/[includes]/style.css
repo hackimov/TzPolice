@@ -1,0 +1,86 @@
+.header {
+          FONT-WEIGHT: bold; FONT-SIZE: 22px; LINE-HEIGHT: 22px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-ALIGN: left; Margin-left: 10
+         }
+.text {
+FONT-WEIGHT: normal; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-ALIGN: left; Margin-left: 20
+}
+.textbold {
+FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #000000; LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-ALIGN: left; Margin-left: 20
+}
+.textboldw {
+FONT-WEIGHT: bold; FONT-SIZE: 12px; COLOR: #FFFFFF; LINE-HEIGHT: 16px; FONT-STYLE: normal; FONT-FAMILY: arial, helvetica, sans-serif; TEXT-ALIGN: center; Margin-left: 0
+}
+
+.ital {
+	FONT-SIZE: 13px; COLOR: #369EFC; LINE-HEIGHT: 13x; FONT-FAMILY: Arial;FONT-STYLE: italic;  PADDING-LEFT: 2; FONT-WEIGHT: bold
+}
+.abs {
+	FONT-SIZE: 12px; COLOR: #730187; LINE-HEIGHT: 14px;MARGIN-LEFT: 25; FONT-FAMILY: Arial; PADDING-LEFT: 2; FONT-STYLE: normal
+}
+.adv {
+	FONT-SIZE: 48px; COLOR: #FCA443; LINE-HEIGHT: 48px;MARGIN-LEFT: 5; FONT-FAMILY: Arial;FONT-WEIGHT: bold
+}
+
+.textbox {
+          FONT-FAMILY: Verdana,Arial,Helvetica;Color: #398cd6; background: #DDEAF9; font-size: 10px; border: 1px; border-style: solid; border-color: #398cd6;
+         }	
+.button {
+          FONT-FAMILY: Verdana,Arial,Helvetica;Color: white; background: #165DB0; font-size: 10px; border: 1px; border-style: solid; border-color: #398cd6;
+         }
+A:link
+{
+    FONT-WEIGHT: bold;
+    COLOR: orange;
+    TEXT-DECORATION: none;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "Verdana";
+    PADDING-LEFT:  0; 
+    PADDING-RIGHT: 0 
+}
+A:visited
+{
+    FONT-WEIGHT: bold;
+    COLOR: orange;
+    TEXT-DECORATION: none;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "Verdana";
+    PADDING-LEFT:  0; 
+    PADDING-RIGHT: 0 
+}
+A:active
+{
+    FONT-WEIGHT: bold;
+    COLOR: #FF0000;
+    TEXT-DECORATION: none;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "Verdana";
+    PADDING-LEFT:  0; 
+    PADDING-RIGHT: 0 
+}
+A:hover
+{
+    FONT-WEIGHT: bold;
+    COLOR: #000000;
+    TEXT-DECORATION: none;
+    FONT-SIZE: 12px;
+    FONT-FAMILY: "Verdana";
+    PADDING-LEFT:  0; 
+    PADDING-RIGHT: 0 
+}
+.boxDark {
+	BACKGROUND-COLOR: #0D69B3
+}
+.boxLight {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-COLOR: #6EA6D1
+
+}
+.boxHiLight {
+	PADDING-RIGHT: 8px; PADDING-LEFT: 8px; PADDING-BOTTOM: 8px; PADDING-TOP: 8px; BACKGROUND-COLOR: #7EBFF0
+}
+
+.boxTextDarkBlue {
+	 FONT-SIZE: 12px; FONT-WEIGHT: bold; COLOR: #ffffff; FONT-FAMILY: Verdana,Arial,Helvetica; TEXT-DECORATION: none
+}
+.boxHeader {
+	FONT-SIZE: 13px; COLOR: #FFFFFF; LINE-HEIGHT: 13px; FONT-FAMILY: Arial;FONT-STYLE: normal; PADDING-LEFT: 2;  FONT-WEIGHT: bold
+}

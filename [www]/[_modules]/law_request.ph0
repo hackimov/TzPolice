@@ -1,0 +1,638 @@
+<h1>Заявка на проверку на чистоту перед законом</h1>
+
+
+<?
+
+//echo (date("d:m:Y, H:i", 1111526683));
+
+?>
+
+<center>
+
+<table border="0" cellspacing="0" background="i/bgr-grid-sand.gif" cellpadding="10" style="BORDER: 1px #957850 solid;">
+
+<tr><td>
+
+<table width="100%"><tr><td align="center"><font color="red"><b>Внимание!</b></font><br></td></tr></table>
+
+<center><font color="red"><b>Заявки на проверку одного персонажа подаются не чаще 1 раза в 3 суток.</b></font></center><br>
+
+
+0. Ознакомиться с правилами прохождения проверки на чистоту следует в соответствующем <a href="http://www.timezero.ru/cgi-bin/forum.pl?a=E&c=53661952&m=1" target=_blank>топике</a> форума.<br>
+
+1. Проверка на чистоту проводится для персонажей не ниже 4 уровня. Проверка необходима для получения гражданства, вступления в клан или покупки недвижимости. Срок действия проверки - 3 суток.<br>
+
+2. Время ожидания выполнения обычной заявки на проверку - до 5 суток, стоимость - 10 медных монет.<br>
+
+3. Стоимость срочных заявок на проверку:<ul>
+
+<li> 12 часов - 50 медных монет
+
+<li> 1 час - 100 медных монет (<font color="red"><b><u>ПЕРЕД</u> оплатой свяжитесь с сотрудником лицензионного отдела!!!</b></font>)
+
+</ul>
+
+4. Перед подачей заявки убедитесь, что перевели необходимую сумму на счет <font color="red"><b>84257</b></font><br>
+
+5. В случае неверного указания ника оплата <b>не возвращается</b> и проверка <b>не проводится</b><br>
+
+6. <font color="red"><b>Внимание!</b></font> Необходимо указывать в соответствующем поле <b>полную</b> строку из логов ячейки. <i>(Информация об остатке на счете <b>игнорируется</b>, но полная строка необходима для безошибочного анализа)</i><br>
+
+7. По всем вопросам, относящимся к проверкам на чистоту, вы можете обратиться к сотрудникам <b>лицензионного отдела</b> полиции: <?
+
+$SQL = "SELECT name FROM sd_cops WHERE dept=18 AND chief=0";
+
+$result = mysql_query($SQL) or die (mysql_error());
+
+  if (mysql_num_rows($result) > 0 ) {
+
+           $tmp = "";
+
+     while (list($name) = mysql_fetch_row($result))
+
+             {
+
+                    echo($tmp."<img src='_imgs/clans/police.gif'><b><a href='http://www.timezero.ru/info.html?".$name."' target='_blank'>".$name."</a></b>");
+
+            $tmp = ", ";
+
+        }
+
+          }
+
+?> или к <b>начальнику отдела</b> - <?
+
+$SQL = "SELECT name FROM sd_cops WHERE dept=18 AND chief=1";
+
+$result = mysql_query($SQL);
+
+  if (mysql_num_rows($result) > 0 ) {
+
+           $tmp = "";
+
+     while (list($name) = mysql_fetch_row($result))
+
+             {
+
+                    echo($tmp."<img src='_imgs/clans/police.gif'><b><a href='http://www.timezero.ru/info.html?".$name."' target='_blank'>".$name."</a></b>");
+
+            $tmp = ", ";
+            $nach = $name;
+        }
+
+          }
+<!-- 8. По вопросам проверки <b>для дилерских услуг</b> связываться только с <b>начальником отдела</b> <? echo("<img src='_imgs/clans/police.gif'><b><a href='http://www.timezero.ru/info.html?".$nach."' target='_blank'>".$nach."</a></b>")?>. -->
+
+<!--
+
+<hr>
+
+<center><font color="red"><b>ВНИМАНИЕ</b></font></center>
+
+<br>
+
+Промежуток времени между оплатой проверки и подачей заявки не должен превышать 2-х часов. В противном случае перевод считается недействительным, заявка не рассматривается.
+
+<br><br>
+
+Заявки со сроком проверки <b>1 час</b> от персонажей, не связавшихся предварительно с сотрудником лицензионного отдела Полиции, не рассматриваются.
+
+<br><br>
+
+Денежные средства, поступившие на счёт <b>84163</b>, в этих случаях считаются безвозмездной помощью полиции и возврату не подлежат.
+
+<hr>
+
+-->
+
+?>.
+<br>
+
+</td></tr>
+
+</table>
+
+</center>
+
+<?
+
+if (!isset($_REQUEST['step']) || $_REQUEST['step'] == 0)
+
+        {
+
+?>
+
+<script language="JavaScript" type="text/JavaScript">
+
+<!--
+
+function urg(obj){
+
+        men = document.getElementById('urg');
+
+  if (obj.options[obj.selectedIndex].value == "2")
+
+          {
+
+                if(men.style.display=='none') men.style.display='';
+
+        }
+
+  else
+
+          {
+
+                if(men.style.display=='') men.style.display='none';
+
+        }
+
+}
+
+function chk(obj)
+
+        {
+
+          if (obj.urgency.options[obj.urgency.selectedIndex].value == "2")
+
+            {
+
+                if(obj.cop_nick.options[obj.cop_nick.selectedIndex].value == "0")
+
+                    {
+
+                        alert ("Укажите ник сотрудника, с которым достигнута договоренность о проверке!");
+
+                    return false;
+
+                }
+
+            else
+
+                    {
+
+                        obj.submit();
+
+                    }
+
+            }
+
+        else
+
+            {
+
+                obj.submit();
+
+            }
+
+    }
+
+//-->
+
+</script>
+
+<form name="lr" method="post" action="?act=law_request">
+
+<input type="hidden" name="step" value="1">
+
+<table width="90%"  border="0" align="center" cellpadding="5" cellspacing="0">
+
+  <tr>
+
+    <td>
+
+      Тип:
+
+      <select name="urgency" onChange="urg(this)">
+
+        <option value="0">обычная</option>
+
+        <option value="1">срочная (12 часов)</option>
+
+        <option value="2">срочная (1 час)</option>
+
+<!--        <option value="3">срочная (2 часа)</option> -->
+
+      </select></td>
+
+    <td>
+
+      Причина:
+
+      <select name="reason">
+
+        <option value="0">вступление в клан</option>
+
+        <option value="1">получение гражданства</option>
+
+        <option value="2">покупка недвижимости</option>
+
+<!--        <option value="3">платная услуга дилера</option> -->
+
+      </select></td>
+
+    <td>
+
+      Ваш ник:
+
+      <input type="text" name="nickname">
+
+</td>
+
+  </tr>
+
+</table>
+
+<div id="urg" style="display:none" align="center">
+
+      Сотрудник ЛО, с которым достигнута договоренность о проверке:
+
+      <select name="cop_nick">
+
+                <option value="0" selected>нет</option>
+
+<?
+
+$SQL = "SELECT name FROM sd_cops WHERE dept=18";
+
+$result = mysql_query($SQL) or die (mysql_error());
+
+  if (mysql_num_rows($result) > 0 ) {
+
+           $tmp = "";
+
+     while (list($name) = mysql_fetch_row($result))
+
+             {
+
+                    echo("<option value='".$name."'>".$name."</option>");
+
+        }
+
+          }
+
+?>
+
+      </select>
+
+</div>
+
+<div align="center"><br>
+
+        Строка из логов ячейки о переводе:<br>
+
+    <textarea name="log_string" cols="90" rows="3" wrap="VIRTUAL"></textarea>
+
+    <br>
+
+    <input type="button" name="Submit" value="Отправить" onClick="chk(lr)">
+
+</div>
+
+</form>
+
+<?
+
+        }
+
+elseif ($_REQUEST['step'] == 1)
+
+        {
+
+        $error = "";
+
+                $urg[0] = 10;
+
+        $urg[1] = 50;
+
+        $urg[2] = 100;
+
+//        $urg[3] = 100;
+
+                $cop_nick = $_REQUEST['cop_nick'];
+
+        $req_nick = $_REQUEST['nickname'];
+
+        if (strlen($req_nick) < 3)
+
+                {
+
+                                $error .= "Укажите Ваш ник!<br><br>";
+
+            }
+
+        $req_reas = $_REQUEST['reason'];
+
+            $log = ">>>start<<< ".$_REQUEST['log_string'].", >>>end<<<";
+
+        if (strpos($log, "das Konto"))
+
+            {
+
+                    $log_lang = "de";
+
+            }
+
+        elseif (strpos($log, "рахунок"))
+
+            {
+
+                    $log_lang = "ua";
+
+            }
+
+        elseif (strpos($log, "на рахунак"))
+
+            {
+
+                    $log_lang = "bl";
+
+            }
+        elseif (strpos($log, "has transferred"))
+
+            {
+
+                    $log_lang = "en";
+
+            }
+
+        else
+
+            {
+
+                    $log_lang = "ru";
+
+            }
+
+//English logs
+
+                if ($log_lang == "en")
+
+                {
+
+                    $log = str_replace("available ballance", ", ", $log);
+
+                    $log_time = trim(sub($log, "start<<<", "Character"));
+
+                    $log_who = sub($log, "Character \\'", "\\' has transferred");
+
+                    $log_where = sub($log, "has transferred ", " Copper coins");
+
+                    if ($log_where == 0)
+
+                        {
+
+                            $log_where = sub($log, "transferred ", " ");
+
+                        }
+
+                    $log_quant = sub($log, "for: ", ", ");
+
+            }
+
+
+
+//Russian logs
+
+                if ($log_lang == "ru")
+
+                {
+
+                    $log = str_replace("сумма на счету", ", ", $log);
+
+                    $log_time = trim(sub($log, "start<<<", "Персонаж"));
+
+                    $log_who = sub($log, "Персонаж \\'", "\\' перевел");
+
+                    $log_where = sub($log, "на счёт ", " ");
+
+                    if ($log_where == 0)
+
+                        {
+
+                            $log_where = sub($log, "на счет ", " ");
+
+                        }
+
+                    $log_quant = sub($log, "на сумму: ", ", ");
+
+            }
+
+//Ukranian logs
+
+                if ($log_lang == "ua")
+
+                {
+
+                    $log = str_replace("сума на рахунку", "", $log);
+
+                    $log_time = trim(sub($log, "start<<<", "Персонаж"));
+
+                    $log_who = sub($log, "Персонаж \\'", "\\' переказав");
+
+                    $log_where = sub($log, "на рахунок ", " ");
+
+                    $log_quant = trim(sub($log, "на суму:", ", "));
+
+            }
+
+//Belorussian logs
+
+                if ($log_lang == "bl")
+
+                {
+
+                    $log = str_replace("сума на рахунку", "", $log);
+
+                    $log_time = trim(sub($log, "start<<<", "Персанаж"));
+
+                    $log_who = sub($log, "Персанаж \\'", "\\' перав");
+
+                    $log_where = sub($log, "на рахунак ", " ");
+
+                    $log_quant = trim(sub($log, "на суму:", ", "));
+
+            }
+
+//German logs
+
+                if ($log_lang == "de")
+
+                {
+
+                    $log = str_replace("Kontostand", "", $log);
+
+                    $log_time = trim(sub($log, "start<<<", "Spieler"));
+
+                    $log_who = sub($log, "Spieler \\'", "\\' ");
+
+                    $log_where = sub($log, "das Konto ", " ");
+
+                    $log_quant = trim(sub($log, "Summe:", "."));
+
+            }
+
+        $req_log = $log_time."|||".$log_who."|||".$log_where."|||".$log_quant;
+
+        if ($log_quant == 10)
+
+                {
+
+                                $req_urg = 0;
+
+            }
+
+        elseif ($log_quant == 50)
+
+                {
+
+                                $req_urg = 1;
+
+            }
+
+        elseif ($log_quant == 100)
+
+                {
+
+                                $req_urg = 2;
+
+            }
+
+        else
+
+                {
+
+                $error .= "Указанная сумма платежа не соответствует расценкам ни на одну из услуг, предоставляемых лицензионным отделом полиции<br><br>Убедитесь, что Вы указали полную строку из логов ячейки. Напоминаем, что информация об остатке на счете игнорируется, но необходима для безошибочного анализа лога<br><br>";
+
+            }
+
+        if ($req_urg == 2 && !$cop_nick)
+
+                {
+
+                $error .= "Предварительно договоритесь с сотрудником лицензионного отдела о проведении срочной проверки. Если договоренность уже достигнута - не забудьте указать ник сотрудника в соответствующем поле заявки<br><br>";
+
+            }
+//смотрим с начальником ли договорились при попытке подать проверку на макуту
+  $SQL = "SELECT name FROM sd_cops WHERE dept=18 AND chief=1";
+  $rrr = mysql_query($SQL);
+  $rrr_res = mysql_fetch_array($rrr);
+
+        if ($req_reas == 3 && $cop_nick != $rrr_res[0] && $req_urg == 2)
+        {
+                   $error .= "Дилерскую проверку может провести только начальник отдела<br><br>";
+        }
+
+        if (strlen($log) > 130)
+
+                {
+
+                    $error .= "В поле для строки из логов ячейки вставьте <font color='red'>ТОЛЬКО</font> строку из логов ячейки<br><br>";
+
+            }
+
+        $userinfo = GetUserInfo($req_nick);
+
+        $query = "SELECT `id` FROM `law_checks` WHERE `payment` = '".$req_log."' LIMIT 1;";
+
+                $double_req = time() - 259200;
+
+//        $query = "SELECT `id` FROM `law_checks` WHERE `nick` = '".$req_nick."' AND `time1` < '".$double_req."';";
+
+        $tmp = mysql_query($query);
+
+        if (mysql_num_rows($tmp) > 0)
+
+                {
+
+                                $error .= "Указанный платеж уже был принят к рассмотрению<br><br>";
+
+            }
+
+
+
+        $query = "SELECT `id` FROM `law_checks` WHERE `nick` = '".$req_nick."' AND `time1` > '".$double_req."' AND (`result` < 1 OR `result` > 1 );";
+
+        $tmp = mysql_query($query);
+
+        if (mysql_num_rows($tmp) > 0)
+
+                        {
+
+                                $error .= "Указанный персонаж уже подавал заявку. Между заявками должно пройти не менее <b>3</b> дней<br><br>";
+
+            }
+
+
+
+        if ($userinfo["level"] > 0 && $userinfo["level"] < 4)
+
+                        {
+
+                    $error .= "Подавать заявки на проверку могут персонажи начиная с <font color='red'>четвертого</font> уровня<br><br>";
+
+            }
+
+/*
+
+        elseif ($userinfo["level"] == 0)
+
+                        {
+
+                    $error .= "Сервер сказал 'Фсе ф сат'<br>";
+
+            }
+
+*/
+
+        if ($log_where !== "84257")
+
+                        {
+
+                    $error .= "Вы перевели деньги на неверный счет. Оплата за проверки принимается на счет <b>84257</b><br><br>";
+
+            }
+
+        if ($log_quant < $urg[$req_urg])
+
+                {
+
+                    $error .= "Вы перевели неверную сумму. Оплата за выбранный тип проверки составляет <b>".$urg[$req_urg]."</b> медных монет<br><br>";
+
+            }
+
+        $req_time = time();
+
+        if ($error == "")
+
+                {
+//проверка на запятую в конце лога
+                   if (substr($req_log, -1) == ',')
+                     $req_log = substr($req_log, 0, (strlen($req_log)-1));
+
+                    $query = "INSERT INTO `law_checks` (`id`, `nick`, `urgent`, `reason`, `status`, `result`, `term`,
+
+                        `time1`, `time2`, `processed_by`, `checked_by`, `payed`, `payment`, `urg_cop`)
+
+                    VALUES
+
+                    ('', '".$req_nick."', '".$req_urg."', '".$req_reas."', '0', '0', '0', '".$req_time."', '', '', '', '0', '".$req_log."', '".$cop_nick."');";
+
+//                                echo ($query);
+
+                                mysql_query($query) or die(mysql_error());
+
+                echo ("<br><center><b>Спасибо. Ваша заявка принята.</b></center>");
+
+            }
+
+        else
+
+                {
+
+                    echo ("<br><center><b><font color='red' size='16'>ОШИБКА</font><br><br><br>".$error."</b><br><a href='javascript:history.go(-1)'>Вернуться</a></center>");
+
+            }
+
+    }
+
+?>

@@ -1,0 +1,50 @@
+img,table	{border:0}
+.regcrit { font-size: 10pt; color: #CC9966;font-weight:bold;}
+.regerr { font-size: 10pt; color: #FF0000; font-weight:bold;}
+.regnames { font-size: 10pt; font-weight:bold;}
+.newsbody { font-size: 10pt; color: #999999;}
+.newsheader {font-size: 12pt; color: #999999;font-weight:bold;}
+.newsfooter {font-size: 7pt; color: #999999;}
+.news {font-size: 14pt; color: #CC9966; font-weight:bold;}
+.topbanner {font-size: 10pt; color: #CC9966;}
+.newslink {font-size: 10pt; color: #CC9966; text-decoration:underline}
+.date {font-size: 7pt; color: #999999;}
+.imgh		{
+	cursor: pointer;
+	cursor: hand;
+	vertical-align:text-bottom;
+	border: 0;
+}
+
+a.menuItem {
+  border: 0px solid #000000;
+  color: #003388;
+  display: block;
+  font-family: MS Sans Serif, Arial, Tahoma,sans-serif;
+  font-size: 8pt;
+  font-weight: bold;
+  padding: 2px 12px 2px 8px;
+  text-decoration: none;
+}
+
+a.menuItem:hover {
+  background-color: #a2a2a2;
+  color: #0066FF;
+}
+
+a,span {
+  FONT-SIZE: 10pt;
+  FONT-FAMILY: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+  text-decoration: none;
+  FONT-WEIGHT: bold;
+  color: #CC9966;
+  cursor: hand;
+}
+body, td, ol, ul, li , p {
+  FONT-SIZE: 10pt;
+  FONT-FAMILY: Verdana, Arial, Helvetica, Tahoma, sans-serif;
+  color: #999999;
+}
+a:hover		{ color: #FFFFFF}
+.number		{ font-size: 11pt; font-weight: bold; color: #6F0000}
+.p		{ font-weight:bold; color: red; background-color: #FAE0E0}

@@ -1,0 +1,12 @@
+.tab-on {
+	BORDER-RIGHT: #957850 1px; FONT-SIZE: 11px; PADDING: 4px; BORDER-TOP: #957850 1px solid; BORDER-LEFT: #957850 1px solid; WIDTH: 20px; CURSOR: hand; COLOR: #7C2B00; BORDER-BOTTOM: #E3D7AF 1px; BACKGROUND: url(/i/bgr-grid-sand.gif);
+}
+.tab-off {
+	BORDER-RIGHT: #957850 1px; FONT-SIZE: 11px; PADDING: 4px; BORDER-TOP: #957850 1px solid; BORDER-LEFT: #957850 1px solid; WIDTH: 20px; CURSOR: hand; COLOR: #000000; BORDER-BOTTOM: #957850 1px solid; BACKGROUND: url(/i/bgr-grid-sand1.gif);
+}
+.tab-none {
+	BORDER-RIGHT: #957850 1px; PADDING: 4px; BORDER-TOP: #957850 1px; BORDER-LEFT: #957850 1px solid; COLOR: #ffffdd; BORDER-BOTTOM: #957850 1px solid; BACKGROUND-COLOR: transparent;
+}
+.tab-content {
+	BORDER-RIGHT: #957850 1px solid; BORDER-TOP: #957850 1px; VERTICAL-ALIGN: top; BORDER-LEFT: #957850 1px solid; BORDER-BOTTOM: #957850 1px solid; BACKGROUND-COLOR: transparent
+}

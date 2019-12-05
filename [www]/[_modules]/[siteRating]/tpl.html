@@ -1,0 +1,38 @@
+<html>
+
+<head>
+  <title></title>
+  <style>
+    .tblSites {        background: #c6c3c6;
+        border: 0px;
+        text-align: center;
+        font-family: monospace;
+    }
+    .tblSites tr {        background: #ffffff;    }
+    #tblSitesHeader {        background: #eeeeee;    }
+    .searchInput {        background: #ffffff;
+        border: 1px #999999 solid;
+        font-family: monospace
+    }
+    .searchBtn {        font-size:70%;
+        font-family: monospace;
+    }
+  </style>
+</head>
+
+<body>
+<table cellspacing=1 class="tblSites">
+  <tr id="tblSitesHeader"><td>domain</td><td>name</td><td align=center>status</td></tr>
+  <tr><td><a href="http://www.tzpolice.ru" target=_blank>tzpolice.ru</a></td><td>TZ Police Department</td><td><img src="img/statusApproved.gif" border=0 alt="одобрено"></td></tr>
+  <tr><td><a href="http://www.stalkerz.ru" target=_blank>stalkerz.ru</a></td><td>StalkerZ NewZ</td><td><img src="img/statusUnchecked.gif" border=0 alt="не проверяно"></td></tr>
+  <tr><td><a href="http://www.allianceclan.ru" target=_blank>allianceclan.ru</a></td><td>The Alliance Clan</td><td><img src="img/statusError.gif" border=0 alt="ошибки"></td></tr>
+</table>
+<br><br>
+== User <br>
+<input type=text class="searchInput"> <button onClick="searchSite(); return false" class="searchBtn">search</button>
+
+
+
+</body>
+
+</html>
