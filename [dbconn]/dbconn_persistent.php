@@ -5,12 +5,12 @@ $host = '192.168.253.6';
 $user = '';
 $password = '';
 $db = 'tzpolice';
-//@$db=mysql_pconnect("127.0.0.6","tzpolice","");
-//@$db=mysql_connect('192.168.253.6', 'tzpolice', '');
+//@$db=mysql_pconnect("127.0.0.6","","");
+//@$db=mysql_connect('192.168.253.6', '', '');
 
-@$db=mysql_connect('192.168.253.6', 'tzpolice', '');
+@$db=mysql_connect('192.168.253.6', '', '');
 
-//$db=mysql_pconnect("127.0.0.6","tzpolice","",MYSQL_CLIENT_INTERACTIVE);
+//$db=mysql_pconnect("127.0.0.6","","",MYSQL_CLIENT_INTERACTIVE);
 //mysql_query("SET SESSION interactive_timeout=120", $db) or die(mysql_error());
 if (!$db)
 {
