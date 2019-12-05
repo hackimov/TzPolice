@@ -7,9 +7,9 @@ class sql {
 	public static function connect() {
 
 		if (empty(self::$mysqli)) {
-			self::$mysqli = new mysqli('192.168.253.6', 'tzpolice', 'uDKs8NthHdsMtBUW', 'tzpolice');
+			self::$mysqli = new mysqli('192.168.253.6', '', '', '');
 		}
-		/* ïðîâåðêà ñîåäèíåíèÿ */
+		/* Ã¯Ã°Ã®Ã¢Ã¥Ã°ÃªÃ  Ã±Ã®Ã¥Ã¤Ã¨Ã­Ã¥Ã­Ã¨Ã¿ */
 		if (self::$mysqli->connect_error) {
 			die('Connect Error (' . $mysqli->connect_errno . ') ' . $mysqli->connect_error);
 		}
