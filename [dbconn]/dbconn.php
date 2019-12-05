@@ -14,7 +14,7 @@ if (!$db) {
 echo <<<HTML
 <html>
 <head>
-<META name="verify-v1" content="h3liW5b59AM60c42sw30IYEu/7xxzKCYdkXvcHujYM4=" />
+<META name="verify-v1" content="" />
 <meta http-equiv="Content-Type" content="text/html; charset=windows-1251">
 <meta http-equiv="Content-Language" content="ru">
   <title>TZ Police Department site ERROR</title>
